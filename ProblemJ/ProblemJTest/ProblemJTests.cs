@@ -64,7 +64,7 @@ public class Tests
                                 3: 21
                                 
                                 """;
-        
+        expected.ReplaceLineEndings();
         Program.Main();
         Assert.That(output.ToString(), Is.EqualTo(expected));
     }
@@ -79,6 +79,7 @@ public class Tests
                  end
                  """);
         const string expected = "";
+        expected.ReplaceLineEndings();
         
         Program.Main();
         Assert.That(output.ToString(), Is.EqualTo(expected));
@@ -98,6 +99,7 @@ public class Tests
                                 1: 0
                                 
                                 """;
+        expected.ReplaceLineEndings();
         
         Program.Main();
         Assert.That(output.ToString(), Is.EqualTo(expected));
@@ -118,6 +120,7 @@ public class Tests
                                 1: 1
 
                                 """;
+        expected.ReplaceLineEndings();
         
         Program.Main();
         Assert.That(output.ToString(), Is.EqualTo(expected));
@@ -139,6 +142,7 @@ public class Tests
                                 2: 1
 
                                 """;
+        expected.ReplaceLineEndings();
         
         Program.Main();
         Assert.That(output.ToString(), Is.EqualTo(expected));
@@ -167,6 +171,7 @@ public class Tests
                                 2: 2
 
                                 """;
+        expected.ReplaceLineEndings();
         
         Program.Main();
         Assert.That(output.ToString(), Is.EqualTo(expected));
@@ -191,6 +196,7 @@ public class Tests
                                 2: 2
 
                                 """;
+        expected.ReplaceLineEndings();
         
         Program.Main();
         Assert.That(output.ToString(), Is.EqualTo(expected));
@@ -211,6 +217,7 @@ public class Tests
                                 1: 1
 
                                 """;
+        expected.ReplaceLineEndings();
         
         Program.Main();
         Assert.That(output.ToString(), Is.EqualTo(expected));
